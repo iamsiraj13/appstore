@@ -1,0 +1,1428 @@
+  <!doctype html>
+ <html lang="en"> 
+   <head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+     <link rel="stylesheet" href="assets/css/font-awesome.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"> 
+     <link rel="stylesheet" href="assets/css/incredecre.css">
+     <link rel="stylesheet" href="assets/css/tab.css">
+     <link rel="stylesheet" href="assets/css/main.css">
+     <link rel="stylesheet" href="assets/css/responsive.css">
+     <!-- fonts -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+     <title>My App</title>
+  
+   </head>
+   <body>
+      <!-- header area start --> 
+
+     <div id="mySidenav" class="sidenav">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <div class="search pl-4 pr-4 mb-3">
+         <form action="#">
+           <input type="search" class="form-control" placeholder="Search app"> 
+         </form>
+       </div>
+       <a href="index.html">App store</a>
+       <a href="web-stor.html">Web store</a>
+       <a href="#">Login</a>
+       <a href="#">Sign up</a>
+     </div>
+     <header class="header-area">
+       <div class="container">
+         <div class="row d-flex align-items-center">
+           <div class="col-lg-3 col-4">
+             <div class="logo">
+               <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+             </div>
+           </div>
+           <div class="col-lg-4 d-none d-md-block">
+             <div class="search">
+               <form action="#">
+                 <input type="search" class="form-control" placeholder="Search app">
+                 <img src="assets/img/icons/Union.png" alt="">
+               </form>
+             </div>
+           </div>
+           <div class="col-lg-4 d-none d-md-block">
+            <div class="menu-wrapper">
+              <div class="menu">
+                <ul>
+                  <li><a href="#" class="active">App store</a></li>
+                  <li><a href="#">Web store</a></li> 
+                </ul>
+              </div>
+              <div class="profile">
+                <a href="#" class="afterr">
+                 <div class="pro-img float-left">
+                   <img src="assets/img/avatar/avatar.png" alt="">
+                 </div>
+                 <span class="acount ">Account</span>
+               
+               </a> 
+                 <ul class="submenu">  
+                   <li><a href="#">Login</a></li>
+                   <li><a href="#">Sign up</a></li>
+                 </ul>
+              </div>
+              <div class="language "> 
+                 <ul>
+                    <li><a href="#" class="afterr2"><img src="assets/img/icons/earth.png" alt=""></a>
+                       <ul class="submenu">
+                         <li><a href="#">Bangla</a></li>
+                         <li><a href="#">English</a></li>
+                         <li><a href="#">Germany</a></li>
+                         <li><a href="#">Frence</a></li>
+                       </ul>
+                    </li>
+                  </ul> 
+              </div>
+            </div>
+           </div>
+           <div class="col-8">
+             <div class="m-view">
+               <ul> 
+                 <li id="flip"><a href="#" onclick="openNav()" ><img src="assets/img/icons/mobile/mobile.png" alt=""></a> 
+                 </li>
+               </ul> 
+             </div> 
+           </div> 
+         </div>
+       </div>
+     </header>
+      <!-- header area end -->
+  	<main>
+ 		  <section class="profile-area">
+ 		  	<div class="container">
+ 		  		<div class="banner">
+ 		  			<img src="assets/img/avatar/profile-banner.png" alt="">
+ 		  		</div>
+ 		  		<div class="profile-grab text-center">
+ 		  			<div class="profile-pic">
+ 		  				<img src="assets/img/avatar/profile.png" alt="">
+ 		  			</div>
+ 		  			<div class="profile-detail">
+ 		  				<h2>Mokhlesur Rahman</h2>
+ 		  				<h5>Android Developer</h5>
+ 		  				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+ 		  			</div>
+ 		  		</div>
+ 		  	</div>
+ 		  </section>
+ 
+ 		 
+ <div class="tile" id="tile-1">
+  	<div class="tab-menu-wrapper" >
+  		<div class="container newtab" style="background-color:#fff;">
+  			<!-- Nav tabs -->
+  			<div class="tab-menu" >
+  				<ul class="nav nav-tabs text-center" role="tablist">
+  				  <div class="slider"></div>
+  				   <li class="">
+  				      <a class="active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Download apps</a>
+  				    </li>
+  				    <li class="">
+  				      <a class="" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Purchased app</a>
+  				    </li>
+  				    <li class="">
+  				      <a class="" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Favorite apps</a>
+  				    </li>
+  				  <li class="">
+  				      <a class="" id="setting-tab" data-toggle="tab" href="#setting" role="tab" aria-controls="setting" aria-selected="false">Settings</a>
+  				    </li>
+  				</ul>
+  			</div>
+  		</div>
+  	</div>
+
+    <!-- Tab panes -->
+    <div class="tab-content fix">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
+      	<div class="container">
+      		<div class="row">
+      			<div class="col-lg-2 col-6">
+      				<div class="product">
+      					<div class="p-label">
+      						<p>INSTALL ONLY</p>
+      					</div>
+      					<div class="p-img mb-2">
+      						<img src="assets/img/product/knowledge.png" alt="">
+      					</div>
+      					<div class="p-title">
+      						<a href="app-details.html"><h3>Nagad</h3></a>
+      					</div>
+      					<div class="p-text ">
+      						<div class="p-pera">
+      							<p class="gray">Adobe</p>
+      						</div>
+      						<div class="p-heart">
+      							<img src="assets/img/icons/heart-outline.png" alt="">
+      						</div>
+      					</div>
+      					<div class="p-meta">
+      						<div class="star-rank">
+      							<span class="fa fa-star checked"></span>
+      							<span class="fa fa-star checked"></span>
+      							<span class="fa fa-star checked"></span>
+      							<span class="fa fa-star"></span>
+      							<span class="fa fa-star"></span>
+      						</div> 
+      						<div class="p-price mt-1">
+      							<p class="red">৳ 000.0</p>
+      						</div>
+      					</div> 
+      				</div>
+      			</div> 	
+    				<div class="col-lg-2 col-6 ">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div> 	
+     				<div class="col-lg-2 col-6 ">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div> 	
+     				<div class="col-lg-2 col-6 ">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div> 	
+     				<div class="col-lg-2 col-6 ">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div>
+     				<div class="col-lg-2 col-6 ">
+    					<div class="product">
+    						<div class="p-label">
+    							<p>INSTALL ONLY</p>
+    						</div>
+    						<div class="p-img mb-2">
+    							<img src="assets/img/product/knowledge.png" alt="">
+    						</div>
+    						<div class="p-title">
+    							<a href="app-details.html"><h3>Nagad</h3></a>
+    						</div>
+    						<div class="p-text ">
+    							<div class="p-pera">
+    								<p class="gray">Adobe</p>
+    							</div>
+    							<div class="p-heart">
+    								<img src="assets/img/icons/heart-outline.png" alt="">
+    							</div>
+    						</div>
+    						<div class="p-meta">
+    							<div class="star-rank">
+    								<span class="fa fa-star checked"></span>
+    								<span class="fa fa-star checked"></span>
+    								<span class="fa fa-star checked"></span>
+    								<span class="fa fa-star"></span>
+    								<span class="fa fa-star"></span>
+    							</div> 
+    							<div class="p-price mt-1">
+    								<p class="red">৳ 000.0</p>
+    							</div>
+    						</div> 
+    					</div>
+     				</div>
+          			<div class="col-lg-2 col-6">
+          				<div class="product">
+          					<div class="p-label">
+          						<p>INSTALL ONLY</p>
+          					</div>
+          					<div class="p-img mb-2">
+          						<img src="assets/img/product/knowledge.png" alt="">
+          					</div>
+          					<div class="p-title">
+          						<a href="app-details.html"><h3>Nagad</h3></a>
+          					</div>
+          					<div class="p-text ">
+          						<div class="p-pera">
+          							<p class="gray">Adobe</p>
+          						</div>
+          						<div class="p-heart">
+          							<img src="assets/img/icons/heart-outline.png" alt="">
+          						</div>
+          					</div>
+          					<div class="p-meta">
+          						<div class="star-rank">
+          							<span class="fa fa-star checked"></span>
+          							<span class="fa fa-star checked"></span>
+          							<span class="fa fa-star checked"></span>
+          							<span class="fa fa-star"></span>
+          							<span class="fa fa-star"></span>
+          						</div> 
+          						<div class="p-price mt-1">
+          							<p class="red">৳ 000.0</p>
+          						</div>
+          					</div> 
+          				</div>
+          			</div> 	
+    				<div class="col-lg-2 col-6 ">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div> 	
+     				<div class="col-lg-2 col-6 ">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div> 	
+     				<div class="col-lg-2 col-6 ">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div> 	
+     				<div class="col-lg-2 col-6 ">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div>
+     				<div class="col-lg-2 col-6 ">
+    					<div class="product">
+    						<div class="p-label">
+    							<p>INSTALL ONLY</p>
+    						</div>
+    						<div class="p-img mb-2">
+    							<img src="assets/img/product/knowledge.png" alt="">
+    						</div>
+    						<div class="p-title">
+    							<a href="app-details.html"><h3>Nagad</h3></a>
+    						</div>
+    						<div class="p-text ">
+    							<div class="p-pera">
+    								<p class="gray">Adobe</p>
+    							</div>
+    							<div class="p-heart">
+    								<img src="assets/img/icons/heart-outline.png" alt="">
+    							</div>
+    						</div>
+    						<div class="p-meta">
+    							<div class="star-rank">
+    								<span class="fa fa-star checked"></span>
+    								<span class="fa fa-star checked"></span>
+    								<span class="fa fa-star checked"></span>
+    								<span class="fa fa-star"></span>
+    								<span class="fa fa-star"></span>
+    							</div> 
+    							<div class="p-price mt-1">
+    								<p class="red">৳ 000.0</p>
+    							</div>
+    						</div> 
+    					</div>
+     				</div>
+      		</div>
+      	</div>
+      </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      	<div class="container">
+      		<div class="row">
+      			<div class="col-lg-2 col-6">
+      				<div class="product">
+      					<div class="p-label">
+      						<p>INSTALL ONLY</p>
+      					</div>
+      					<div class="p-img mb-2">
+      						<img src="assets/img/product/knowledge.png" alt="">
+      					</div>
+      					<div class="p-title">
+      						<a href="app-details.html"><h3>Nagad</h3></a>
+      					</div>
+      					<div class="p-text ">
+      						<div class="p-pera">
+      							<p class="gray">Adobe</p>
+      						</div>
+      						<div class="p-heart">
+      							<img src="assets/img/icons/heart-outline.png" alt="">
+      						</div>
+      					</div>
+      					<div class="p-meta">
+      						<div class="star-rank">
+      							<span class="fa fa-star checked"></span>
+      							<span class="fa fa-star checked"></span>
+      							<span class="fa fa-star checked"></span>
+      							<span class="fa fa-star"></span>
+      							<span class="fa fa-star"></span>
+      						</div> 
+      						<div class="p-price mt-1">
+      							<p class="red">৳ 000.0</p>
+      						</div>
+      					</div> 
+      				</div>
+      			</div> 	
+      				<div class="col-lg-2 col-6">
+       						<div class="product">
+       							<div class="p-label">
+       								<p>INSTALL ONLY</p>
+       							</div>
+       							<div class="p-img mb-2">
+       								<img src="assets/img/product/knowledge.png" alt="">
+       							</div>
+       							<div class="p-title">
+       								<a href="app-details.html"><h3>Nagad</h3></a>
+       							</div>
+       							<div class="p-text ">
+       								<div class="p-pera">
+       									<p class="gray">Adobe</p>
+       								</div>
+       								<div class="p-heart">
+       									<img src="assets/img/icons/heart-outline.png" alt="">
+       								</div>
+       							</div>
+       							<div class="p-meta">
+       								<div class="star-rank">
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star"></span>
+       									<span class="fa fa-star"></span>
+       								</div> 
+       								<div class="p-price mt-1">
+       									<p class="red">৳ 000.0</p>
+       								</div>
+       							</div> 
+       						</div>
+       				</div> 	
+       				<div class="col-lg-2 col-6">
+       						<div class="product">
+       							<div class="p-label">
+       								<p>INSTALL ONLY</p>
+       							</div>
+       							<div class="p-img mb-2">
+       								<img src="assets/img/product/knowledge.png" alt="">
+       							</div>
+       							<div class="p-title">
+       								<a href="app-details.html"><h3>Nagad</h3></a>
+       							</div>
+       							<div class="p-text ">
+       								<div class="p-pera">
+       									<p class="gray">Adobe</p>
+       								</div>
+       								<div class="p-heart">
+       									<img src="assets/img/icons/heart-outline.png" alt="">
+       								</div>
+       							</div>
+       							<div class="p-meta">
+       								<div class="star-rank">
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star"></span>
+       									<span class="fa fa-star"></span>
+       								</div> 
+       								<div class="p-price mt-1">
+       									<p class="red">৳ 000.0</p>
+       								</div>
+       							</div> 
+       						</div>
+       				</div> 	
+       				<div class="col-lg-2 col-6">
+       						<div class="product">
+       							<div class="p-label">
+       								<p>INSTALL ONLY</p>
+       							</div>
+       							<div class="p-img mb-2">
+       								<img src="assets/img/product/knowledge.png" alt="">
+       							</div>
+       							<div class="p-title">
+       								<a href="app-details.html"><h3>Nagad</h3></a>
+       							</div>
+       							<div class="p-text ">
+       								<div class="p-pera">
+       									<p class="gray">Adobe</p>
+       								</div>
+       								<div class="p-heart">
+       									<img src="assets/img/icons/heart-outline.png" alt="">
+       								</div>
+       							</div>
+       							<div class="p-meta">
+       								<div class="star-rank">
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star"></span>
+       									<span class="fa fa-star"></span>
+       								</div> 
+       								<div class="p-price mt-1">
+       									<p class="red">৳ 000.0</p>
+       								</div>
+       							</div> 
+       						</div>
+       				</div> 	
+       				<div class="col-lg-2 col-6">
+       						<div class="product">
+       							<div class="p-label">
+       								<p>INSTALL ONLY</p>
+       							</div>
+       							<div class="p-img mb-2">
+       								<img src="assets/img/product/knowledge.png" alt="">
+       							</div>
+       							<div class="p-title">
+       								<a href="app-details.html"><h3>Nagad</h3></a>
+       							</div>
+       							<div class="p-text ">
+       								<div class="p-pera">
+       									<p class="gray">Adobe</p>
+       								</div>
+       								<div class="p-heart">
+       									<img src="assets/img/icons/heart-outline.png" alt="">
+       								</div>
+       							</div>
+       							<div class="p-meta">
+       								<div class="star-rank">
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star"></span>
+       									<span class="fa fa-star"></span>
+       								</div> 
+       								<div class="p-price mt-1">
+       									<p class="red">৳ 000.0</p>
+       								</div>
+       							</div> 
+       						</div>
+       				</div>
+       				<div class="col-lg-2 col-6">
+      					<div class="product">
+      						<div class="p-label">
+      							<p>INSTALL ONLY</p>
+      						</div>
+      						<div class="p-img mb-2">
+      							<img src="assets/img/product/knowledge.png" alt="">
+      						</div>
+      						<div class="p-title">
+      							<a href="app-details.html"><h3>Nagad</h3></a>
+      						</div>
+      						<div class="p-text ">
+      							<div class="p-pera">
+      								<p class="gray">Adobe</p>
+      							</div>
+      							<div class="p-heart">
+      								<img src="assets/img/icons/heart-outline.png" alt="">
+      							</div>
+      						</div>
+      						<div class="p-meta">
+      							<div class="star-rank">
+      								<span class="fa fa-star checked"></span>
+      								<span class="fa fa-star checked"></span>
+      								<span class="fa fa-star checked"></span>
+      								<span class="fa fa-star"></span>
+      								<span class="fa fa-star"></span>
+      							</div> 
+      							<div class="p-price mt-1">
+      								<p class="red">৳ 000.0</p>
+      							</div>
+      						</div> 
+      					</div>
+       				</div>
+        			<div class="col-lg-2 col-6">
+        				<div class="product">
+        					<div class="p-label">
+        						<p>INSTALL ONLY</p>
+        					</div>
+        					<div class="p-img mb-2">
+        						<img src="assets/img/product/knowledge.png" alt="">
+        					</div>
+        					<div class="p-title">
+        						<a href="app-details.html"><h3>Nagad</h3></a>
+        					</div>
+        					<div class="p-text ">
+        						<div class="p-pera">
+        							<p class="gray">Adobe</p>
+        						</div>
+        						<div class="p-heart">
+        							<img src="assets/img/icons/heart-outline.png" alt="">
+        						</div>
+        					</div>
+        					<div class="p-meta">
+        						<div class="star-rank">
+        							<span class="fa fa-star checked"></span>
+        							<span class="fa fa-star checked"></span>
+        							<span class="fa fa-star checked"></span>
+        							<span class="fa fa-star"></span>
+        							<span class="fa fa-star"></span>
+        						</div> 
+        						<div class="p-price mt-1">
+        							<p class="red">৳ 000.0</p>
+        						</div>
+        					</div> 
+        				</div>
+        			</div> 	
+      				<div class="col-lg-2 col-6">
+       						<div class="product">
+       							<div class="p-label">
+       								<p>INSTALL ONLY</p>
+       							</div>
+       							<div class="p-img mb-2">
+       								<img src="assets/img/product/knowledge.png" alt="">
+       							</div>
+       							<div class="p-title">
+       								<a href="app-details.html"><h3>Nagad</h3></a>
+       							</div>
+       							<div class="p-text ">
+       								<div class="p-pera">
+       									<p class="gray">Adobe</p>
+       								</div>
+       								<div class="p-heart">
+       									<img src="assets/img/icons/heart-outline.png" alt="">
+       								</div>
+       							</div>
+       							<div class="p-meta">
+       								<div class="star-rank">
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star"></span>
+       									<span class="fa fa-star"></span>
+       								</div> 
+       								<div class="p-price mt-1">
+       									<p class="red">৳ 000.0</p>
+       								</div>
+       							</div> 
+       						</div>
+       				</div> 	
+       				<div class="col-lg-2 col-6">
+       						<div class="product">
+       							<div class="p-label">
+       								<p>INSTALL ONLY</p>
+       							</div>
+       							<div class="p-img mb-2">
+       								<img src="assets/img/product/knowledge.png" alt="">
+       							</div>
+       							<div class="p-title">
+       								<a href="app-details.html"><h3>Nagad</h3></a>
+       							</div>
+       							<div class="p-text ">
+       								<div class="p-pera">
+       									<p class="gray">Adobe</p>
+       								</div>
+       								<div class="p-heart">
+       									<img src="assets/img/icons/heart-outline.png" alt="">
+       								</div>
+       							</div>
+       							<div class="p-meta">
+       								<div class="star-rank">
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star"></span>
+       									<span class="fa fa-star"></span>
+       								</div> 
+       								<div class="p-price mt-1">
+       									<p class="red">৳ 000.0</p>
+       								</div>
+       							</div> 
+       						</div>
+       				</div> 	
+       				<div class="col-lg-2 col-6">
+       						<div class="product">
+       							<div class="p-label">
+       								<p>INSTALL ONLY</p>
+       							</div>
+       							<div class="p-img mb-2">
+       								<img src="assets/img/product/knowledge.png" alt="">
+       							</div>
+       							<div class="p-title">
+       								<a href="app-details.html"><h3>Nagad</h3></a>
+       							</div>
+       							<div class="p-text ">
+       								<div class="p-pera">
+       									<p class="gray">Adobe</p>
+       								</div>
+       								<div class="p-heart">
+       									<img src="assets/img/icons/heart-outline.png" alt="">
+       								</div>
+       							</div>
+       							<div class="p-meta">
+       								<div class="star-rank">
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star"></span>
+       									<span class="fa fa-star"></span>
+       								</div> 
+       								<div class="p-price mt-1">
+       									<p class="red">৳ 000.0</p>
+       								</div>
+       							</div> 
+       						</div>
+       				</div> 	
+       				<div class="col-lg-2 col-6">
+       						<div class="product">
+       							<div class="p-label">
+       								<p>INSTALL ONLY</p>
+       							</div>
+       							<div class="p-img mb-2">
+       								<img src="assets/img/product/knowledge.png" alt="">
+       							</div>
+       							<div class="p-title">
+       								<a href="app-details.html"><h3>Nagad</h3></a>
+       							</div>
+       							<div class="p-text ">
+       								<div class="p-pera">
+       									<p class="gray">Adobe</p>
+       								</div>
+       								<div class="p-heart">
+       									<img src="assets/img/icons/heart-outline.png" alt="">
+       								</div>
+       							</div>
+       							<div class="p-meta">
+       								<div class="star-rank">
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star checked"></span>
+       									<span class="fa fa-star"></span>
+       									<span class="fa fa-star"></span>
+       								</div> 
+       								<div class="p-price mt-1">
+       									<p class="red">৳ 000.0</p>
+       								</div>
+       							</div> 
+       						</div>
+       				</div>
+       				<div class="col-lg-2 col-6">
+      					<div class="product">
+      						<div class="p-label">
+      							<p>INSTALL ONLY</p>
+      						</div>
+      						<div class="p-img mb-2">
+      							<img src="assets/img/product/knowledge.png" alt="">
+      						</div>
+      						<div class="p-title">
+      							<a href="app-details.html"><h3>Nagad</h3></a>
+      						</div>
+      						<div class="p-text ">
+      							<div class="p-pera">
+      								<p class="gray">Adobe</p>
+      							</div>
+      							<div class="p-heart">
+      								<img src="assets/img/icons/heart-outline.png" alt="">
+      							</div>
+      						</div>
+      						<div class="p-meta">
+      							<div class="star-rank">
+      								<span class="fa fa-star checked"></span>
+      								<span class="fa fa-star checked"></span>
+      								<span class="fa fa-star checked"></span>
+      								<span class="fa fa-star"></span>
+      								<span class="fa fa-star"></span>
+      							</div> 
+      							<div class="p-price mt-1">
+      								<p class="red">৳ 000.0</p>
+      							</div>
+      						</div> 
+      					</div>
+       				</div>
+      		</div>
+      	</div>
+    </div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      	<div class="container">
+      		<div class="row">
+      			<div class="col-lg-2 col-6">
+      				<div class="product">
+      					<div class="p-label">
+      						<p>INSTALL ONLY</p>
+      					</div>
+      					<div class="p-img mb-2">
+      						<img src="assets/img/product/knowledge.png" alt="">
+      					</div>
+      					<div class="p-title">
+      						<a href="app-details.html"><h3>Nagad</h3></a>
+      					</div>
+      					<div class="p-text ">
+      						<div class="p-pera">
+      							<p class="gray">Adobe</p>
+      						</div>
+      						<div class="p-heart">
+      							<img src="assets/img/icons/heart-outline.png" alt="">
+      						</div>
+      					</div>
+      					<div class="p-meta">
+      						<div class="star-rank">
+      							<span class="fa fa-star checked"></span>
+      							<span class="fa fa-star checked"></span>
+      							<span class="fa fa-star checked"></span>
+      							<span class="fa fa-star"></span>
+      							<span class="fa fa-star"></span>
+      						</div> 
+      						<div class="p-price mt-1">
+      							<p class="red">৳ 000.0</p>
+      						</div>
+      					</div> 
+      				</div>
+      			</div> 	
+    				<div class="col-lg-2 col-6">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div> 	
+     				<div class="col-lg-2 col-6">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div> 	
+     				<div class="col-lg-2 col-6">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div> 	
+     				<div class="col-lg-2 col-6">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div>
+     				<div class="col-lg-2 col-6">
+    					<div class="product">
+    						<div class="p-label">
+    							<p>INSTALL ONLY</p>
+    						</div>
+    						<div class="p-img mb-2">
+    							<img src="assets/img/product/knowledge.png" alt="">
+    						</div>
+    						<div class="p-title">
+    							<a href="app-details.html"><h3>Nagad</h3></a>
+    						</div>
+    						<div class="p-text ">
+    							<div class="p-pera">
+    								<p class="gray">Adobe</p>
+    							</div>
+    							<div class="p-heart">
+    								<img src="assets/img/icons/heart-outline.png" alt="">
+    							</div>
+    						</div>
+    						<div class="p-meta">
+    							<div class="star-rank">
+    								<span class="fa fa-star checked"></span>
+    								<span class="fa fa-star checked"></span>
+    								<span class="fa fa-star checked"></span>
+    								<span class="fa fa-star"></span>
+    								<span class="fa fa-star"></span>
+    							</div> 
+    							<div class="p-price mt-1">
+    								<p class="red">৳ 000.0</p>
+    							</div>
+    						</div> 
+    					</div>
+     				</div>
+      			<div class="col-lg-2 col-6">
+      				<div class="product">
+      					<div class="p-label">
+      						<p>INSTALL ONLY</p>
+      					</div>
+      					<div class="p-img mb-2">
+      						<img src="assets/img/product/knowledge.png" alt="">
+      					</div>
+      					<div class="p-title">
+      						<a href="app-details.html"><h3>Nagad</h3></a>
+      					</div>
+      					<div class="p-text ">
+      						<div class="p-pera">
+      							<p class="gray">Adobe</p>
+      						</div>
+      						<div class="p-heart">
+      							<img src="assets/img/icons/heart-outline.png" alt="">
+      						</div>
+      					</div>
+      					<div class="p-meta">
+      						<div class="star-rank">
+      							<span class="fa fa-star checked"></span>
+      							<span class="fa fa-star checked"></span>
+      							<span class="fa fa-star checked"></span>
+      							<span class="fa fa-star"></span>
+      							<span class="fa fa-star"></span>
+      						</div> 
+      						<div class="p-price mt-1">
+      							<p class="red">৳ 000.0</p>
+      						</div>
+      					</div> 
+      				</div>
+      			</div> 	
+    				<div class="col-lg-2 col-6">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div> 	
+     				<div class="col-lg-2 col-6">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div> 	
+     				<div class="col-lg-2 col-6">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div> 	
+     				<div class="col-lg-2 col-6">
+     						<div class="product">
+     							<div class="p-label">
+     								<p>INSTALL ONLY</p>
+     							</div>
+     							<div class="p-img mb-2">
+     								<img src="assets/img/product/knowledge.png" alt="">
+     							</div>
+     							<div class="p-title">
+     								<a href="app-details.html"><h3>Nagad</h3></a>
+     							</div>
+     							<div class="p-text ">
+     								<div class="p-pera">
+     									<p class="gray">Adobe</p>
+     								</div>
+     								<div class="p-heart">
+     									<img src="assets/img/icons/heart-outline.png" alt="">
+     								</div>
+     							</div>
+     							<div class="p-meta">
+     								<div class="star-rank">
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star checked"></span>
+     									<span class="fa fa-star"></span>
+     									<span class="fa fa-star"></span>
+     								</div> 
+     								<div class="p-price mt-1">
+     									<p class="red">৳ 000.0</p>
+     								</div>
+     							</div> 
+     						</div>
+     				</div>
+     				<div class="col-lg-2 col-6">
+    					<div class="product">
+    						<div class="p-label">
+    							<p>INSTALL ONLY</p>
+    						</div>
+    						<div class="p-img mb-2">
+    							<img src="assets/img/product/knowledge.png" alt="">
+    						</div>
+    						<div class="p-title">
+    							<a href="app-details.html"><h3>Nagad</h3></a>
+    						</div>
+    						<div class="p-text ">
+    							<div class="p-pera">
+    								<p class="gray">Adobe</p>
+    							</div>
+    							<div class="p-heart">
+    								<img src="assets/img/icons/heart-outline.png" alt="">
+    							</div>
+    						</div>
+    						<div class="p-meta">
+    							<div class="star-rank">
+    								<span class="fa fa-star checked"></span>
+    								<span class="fa fa-star checked"></span>
+    								<span class="fa fa-star checked"></span>
+    								<span class="fa fa-star"></span>
+    								<span class="fa fa-star"></span>
+    							</div> 
+    							<div class="p-price mt-1">
+    								<p class="red">৳ 000.0</p>
+    							</div>
+    						</div> 
+    					</div>
+     				</div>
+      		</div>
+      	</div>
+    </div>
+    <div class="tab-pane fade" id="setting" role="tabpanel" aria-labelledby="setting-tab">
+    	<div class="container">
+    		Settings Not Found
+    	</div>
+    </div>
+    </div>
+
+  </div>
+  		 
+  	</main>
+  	<footer class="footer-area mt-5">
+  		<div class="container">
+  			<div class="widget-area">
+  				<div class="row">
+  					<div class="col-lg-3 col-6">
+  						<div class="widget">
+  							<ul>
+  								<li><a href="#">About Us</a></li>
+  								<li><a href="#">Privacy Policy</a></li>
+  								<li><a href="#">Terms $ Condition</a></li>
+  							</ul>
+  						</div>
+  					</div>
+  					<div class="col-lg-3 col-6">
+  						<div class="widget">
+  							<h3>Contact Us</h3>
+  							<ul>
+  								<li>Email: myapp@gmail.com</li>
+  								<li>Contact no: +8801746764857</li> 
+  							</ul>
+  						</div>
+  					</div>
+  					<div class="col-lg-3 col-6">
+  						<div class="widget social">
+  							<h3>Follow Us</h3>
+  							<ul>
+  								<li><a href="#"> <img src="assets//img/icons/facebook.png" alt=""></a></li>    
+  								<li><a href="#"> <img src="assets//img/icons/twitter.png" alt=""></a></li>    
+  								<li><a href="#"> <img src="assets//img/icons/linkedin.png" alt=""></a></li>    
+  							</ul>
+  						</div>
+  					</div>
+  					<div class="col-lg-3 col-6">
+  						<div class="widget ">
+  							<h3>Get in touch</h3>
+  							 <div class="subscribe mt-3">
+  							 	 <form action="#">
+  							 	 	<div class="group">
+  							 	 		<div class="input">
+  							 	 			<input type="text" placeholder="Email address">
+  							 	 		</div>
+  							 	 		<div class="input-btn"><a href="#">Subscribe</a></div>
+  							 	 	</div>
+  							 	 </form>
+  							 </div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="copyrite-text text-center">
+  				<p>Copyright © 2020 All Rights Reserved</p>
+  			</div>
+  		</div>
+  	</footer>
+
+  
+
+
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="assets/js/jquery.min.js"></script>
+     <script src="assets/js/popover.js"></script>
+     <script src="assets/js/bootstrap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+     <script src="assets/js/tab.js"></script>
+     <script src="assets/js/custom.js"></script>
+   </body>
+ </html>
